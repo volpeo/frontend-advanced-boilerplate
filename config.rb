@@ -30,6 +30,9 @@ activate :autoprefixer
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
+data.team_members.each do |member|
+  proxy "/flats/#{member[:name].downcase}.html", "/flats/show.html", locals: { owner: member[:name].downcase }
+end
 
 ###
 # Helpers
@@ -59,7 +62,7 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
   # activate :minify_javascript

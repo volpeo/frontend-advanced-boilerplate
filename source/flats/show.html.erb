@@ -1,0 +1,12 @@
+
+<div class="container">
+  <h1><%= owner.capitalize %></h1>
+
+  <% member = data.team_members.find { |member| member[:name] == owner.capitalize } %>
+
+  <img class="team-avatar fadeIn img-circle" src="<%= member[:picture_url] %>" alt="<%= "#{member[:name]} - #{member[:position]}" %>">
+  <h3><%= member[:name] %></h3>
+  <p>
+    <%= member[:position] %>
+  </p>
+</div>

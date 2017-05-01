@@ -2,10 +2,30 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-<h1>COUCOU LA FAMILLE</h1>
+<div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+  <div class="banner-content">
+    <h1>WELCOME HOME</h1>
+    <p>Rent unique places to stay from local hosts in 190+ countries.</p>
+    <form action="#" class="form-inline">
+      <input type="text" class="form-control input-lg" placeholder="checkin">
+      <input type="text" class="form-control input-lg" placeholder="checkout">
+      <select name="" id="" class="form-control input-lg">
+        <option value="1">1 person</option>
+        <option value="2">2 persons</option>
+        <option value="3">3 persons</option>
+      </select>
+      <input type="submit" class="btn btn-primary btn-lg" value="Search">
+    </form>
+  </div>
+</div>
+
 <div class="welcome text-center padded">
   <h1>Welcome to Middleman</h1>
   <p class="doc">
     <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
+  </p>
+
+  <p>
+    <%= link_to "Watch my Crew", "/team.html", class: "btn btn-primary btn-lg" %>
   </p>
 </div>

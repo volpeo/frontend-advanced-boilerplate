@@ -1,0 +1,21 @@
+---
+title: This is the Wagon Bordeaux team
+---
+
+<h1 class="text-center">Team</h1>
+
+<div class="container text-center">
+  <div class="row">
+    <% data.team_members.each do |member| %>
+      <div class="col-md-3 col-sm-6">
+        <% link_to "/flats/#{member[:name].downcase}.html" do %>
+          <img class="team-avatar fadeIn img-circle" src="<%= member[:picture_url] %>" alt="<%= "#{member[:name]} - #{member[:position]}" %>">
+        <% end %>
+        <h3><%= member[:name] %></h3>
+        <p>
+          <%= member[:position] %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+</div>
