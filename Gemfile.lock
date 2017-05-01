@@ -39,7 +39,7 @@ GEM
     erubis (2.7.0)
     execjs (2.6.0)
     ffi (1.9.10)
-    font-awesome-sass (4.5.0)
+    font-awesome-sass (4.7.0)
       sass (>= 3.2)
     haml (4.0.7)
       tilt
@@ -141,11 +141,11 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (= 3.3.6)
-  font-awesome-sass (= 4.5.0)
+  font-awesome-sass (~> 4.7.0)
   jquery-middleman
   middleman (~> 3.4)
   middleman-autoprefixer
   middleman-deploy (~> 1.0)
 
 BUNDLED WITH
-   1.11.2
+   1.13.6
